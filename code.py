@@ -1,12 +1,12 @@
 def findPeaks(_array):
-    #Array in de alle Peaks gespeichert werden.
+    #Array in dem alle Peaks gespeichert werden.
     peaks = []
     #durchlaufen des gesammten 2D Arrays.
     for i in range(len(_array)):
         for j in range(len(_array[i])):
             #Speichern des aktuellen Wertes in einer Variable
             akt = _array[i][j]
-            #initialisieren von vertPeak und und horPeak und beide auf False setzen
+            #initialisieren von vertPeak und horPeak und beide auf False setzen
             vertPeak = False
             horPeak = False
             #Wenn der aktuelle Wert sich ganz rechts oder ganz links befindet
@@ -33,7 +33,7 @@ def findPeaks(_array):
             if horPeak == True:
                 #wenn der Wert sich am oberen oder am unteren rand befindet
                 if i == 0 or i == len(_array)-1:
-                    #Wenn sich der der Wert ganz oben befindet
+                    #Wenn sich der Wert ganz oben befindet
                     if i == 0:
                         #Wenn der Wert ein VertPeak ist
                         if _array[i][j] > _array[i+1][j]:
